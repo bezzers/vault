@@ -10,4 +10,4 @@ listener "tcp" {
   tls_key_file = "/etc/docker/key.pem"
 } 
 
-disable_mlock false
+disable_mlock = true
