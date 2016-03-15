@@ -5,7 +5,7 @@ MAINTAINER Paul Beswick
 
 RUN mkdir /vault
 ADD config.hcl /vault/config.hcl
-ADD entrypoint.sh
+ADD entrypoint.sh /vault/entrypoint.sh
 
 ENTRYPOINT ["/vault/entrypoint.sh"]
 CMD ["version"]
