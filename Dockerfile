@@ -8,5 +8,5 @@ ADD config.hcl /vault/config.hcl
 ADD entrypoint.sh /vault/entrypoint.sh
 RUN chmod +x /vault/entrypoint.sh
 
-ENTRYPOINT ["/bin/sh", "/vault/entrypoint.sh"]
+ENTRYPOINT ["/usr/local/bin/vault"]
 CMD ["version"]
